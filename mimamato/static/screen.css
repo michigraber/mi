@@ -1,0 +1,28 @@
+body {
+	background-position: center top;
+	font-family: "Courier New", Courier, sans-serif, Monaco, monospace;
+}
+
+div#container {
+    text-align: left;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	min-height: 600px;
+	width: 800px;
+}
+
+div#menu {
+	color: #020c15;
+	font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div#content {
+	color: #1f3545;
+	padding: 10px;
+	font-size: 12px;
+}
+

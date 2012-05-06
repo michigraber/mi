@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load i18n %}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<link rel="stylesheet" href="{{ STATIC_URL }}screen.css" type="text/css" />
+	<title>{% block title %}mimamato{% block title_detail%}{% endblock %}{% endblock %}</title>
+
+</head>
+
+<body>
+    <center>
+    <div id='container'>
+    {% block container %}
+        <div id='header'>
+            {% block header %}
+                {% include 'header.html' %}
+            {% endblock %}
+        </div>
+
+        <div id='billboard'>
+        {% block billboard %}
+            <div id='admin'>
+            {% block admin %}
+            {% endblock%}
+            </div>
+            <div id='menu'>
+            {% block menu %}
+            menu
+            {% endblock%}
+            </div>
+        {% endblock%}
+        </div>
+
+        <div id='content'>
+        {% block content %}
+        <h1>content block</h2>
+        {% endblock%}
+        </div>
+    {% endblock %}
+    </div>
+    </center>
+</body>
+</html>
+
