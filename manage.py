@@ -1,4 +1,14 @@
 #!/usr/bin/env python
+
+# platform specific library loading
+import sys
+import platform
+if platform.uname()[1] == 'dude.local':
+    sys.path.append('/Users/michael/code/songbird-django/code/libraries/lib/python/')
+
+# do not change anything below here mhg
+# ////////////////////////////////////////////////////
+
 from django.core.management import execute_manager
 import imp
 try:

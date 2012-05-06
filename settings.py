@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'michigraber$mi',                           # Or path to database file if using sqlite3.
+        'NAME': 'michigraber$mi',               # Or path to database file if using sqlite3.
         'USER': 'michigraber',                  # Not used with sqlite3.
         'PASSWORD': 'antigone',                 # Not used with sqlite3.
         'HOST': 'mysql.server',                 # Set to empty string for localhost. Not used with sqlite3.
@@ -149,4 +149,12 @@ LOGGING = {
 }
 
 STATICFILES_DIRS = ('/home/michigraber/mi/static',)
+
+### load user / host specific settings if a file "local_settings" exists
+try:
+    from local_settings import *
+except ImportError, exp:
+    print
+    print 'no local settings loaded'
+    print
 
