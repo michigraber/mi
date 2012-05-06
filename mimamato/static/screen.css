@@ -18,7 +18,34 @@ div#menu {
 	font-size: 12px;
     font-weight: bold;
     padding: 10px;
+    padding-bottom: 20px;
 }
+
+
+/* LINKS */
+
+a { 
+    color:#020c15;
+    text-decoration: none;
+}
+
+a:hover { 
+    color:#a83c15;
+}
+
+#menu li { 
+    display:block;
+    float:left;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    padding-right:10px;
+}
+
+a.hover { 
+    color:#a83c15;
+}
+
 
 div#content {
 	color: #1f3545;
