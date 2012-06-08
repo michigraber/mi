@@ -14,6 +14,7 @@ class MediaUrl(models.Model):
     TYPE_WEATHERFORECAST = 1
     TYPE_WEATHERDATA = 2
     TYPE_PICTURE = 3
+    TYPE_INACTIVE = 3
 
     TYPE_CHOICES = (
         (TYPE_WEBCAM, 'webcam'),
