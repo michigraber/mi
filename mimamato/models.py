@@ -20,6 +20,7 @@ class MediaUrl(models.Model):
         (TYPE_WEATHERFORECAST, 'weather forecast'),
         (TYPE_WEATHERDATA, 'weather data'),
         (TYPE_PICTURE, 'pic'),
+        (TYPE_INACTIVE, 'inactive'),
     )
 
     type = models.PositiveIntegerField(choices=TYPE_CHOICES)
