@@ -60,5 +60,5 @@ div#content {
 /* IMAGES */
 
 div#image_remote {
-    max-width: 800px;
+    width: 800px;
 }
