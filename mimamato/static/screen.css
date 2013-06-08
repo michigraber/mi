@@ -57,3 +57,8 @@ div#content {
 	font-size: 12px;
 }
 
+/* IMAGES */
+
+div#image_remote {
+    max-width: 800px;
+}

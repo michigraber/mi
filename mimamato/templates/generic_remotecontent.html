@@ -6,7 +6,9 @@
     <h2>{{ url.title }}</h2>
     <p>{{ url.location }}</p>
     <center>
-    <img src='{{ url.url }}'>
+        <div id="image_remote">
+            <img src='{{ url.url }}'>
+        </div>
     </center>
 {% endfor %}
 {% endblock %}
